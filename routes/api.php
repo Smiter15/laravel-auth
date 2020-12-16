@@ -17,9 +17,6 @@ use App\Http\Controllers\PasswordController;
 |
 */
 
-// Required to fix CORS issues
-// header('Access-Control-Allow-Origin: *');
-
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
